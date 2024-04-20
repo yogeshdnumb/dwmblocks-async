@@ -13,9 +13,10 @@
 #include "config.h"
 #include "util.h"
 
-block block_new(const char *const command, const unsigned int interval,
-                const int signal) {
+block block_new(const char *const icon, const char *const command,
+                const unsigned int interval, const int signal) {
     block block = {
+        .icon = icon,
         .command = command,
         .interval = interval,
         .signal = signal,

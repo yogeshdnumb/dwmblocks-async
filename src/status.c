@@ -49,6 +49,7 @@ bool status_update(status *const status) {
             }
 #endif
 
+            (void)strncat(status->current, block->icon, LEN(block->output));
             (void)strncat(status->current, block->output, LEN(block->output));
         }
     }
